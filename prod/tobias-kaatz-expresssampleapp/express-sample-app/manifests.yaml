@@ -63,7 +63,7 @@ spec:
         - name: PROTOCOLS
         - name: LOG_LEVEL
           value: debug
-        image: quay.io/tkaatz/hello-web:a623e78a702f058aa03e3ad38c068d539c284235
+        image: quay.io/tkaatz/hello-web:48301d71801a19ab6617a72b38d2c8ff9062b853
         imagePullPolicy: IfNotPresent
         livenessProbe:
           failureThreshold: 3
