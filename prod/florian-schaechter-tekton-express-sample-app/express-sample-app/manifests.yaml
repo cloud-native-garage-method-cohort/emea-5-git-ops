@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   annotations:
-    app.openshift.io/vcs-ref: 9ddd55bf12583a958154778b9ac09fbd37c04a1e
+    app.openshift.io/vcs-ref: 1ae29db5c2b10d7d04c0e165b537b4c57f10bd5f
     app.openshift.io/vcs-uri: https://github.com/FlorianSchaechter/express-sample-app
   labels:
     app: florian-schaechter-tekton-express-sample-app
@@ -28,7 +28,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   annotations:
-    app.openshift.io/vcs-ref: 9ddd55bf12583a958154778b9ac09fbd37c04a1e
+    app.openshift.io/vcs-ref: 1ae29db5c2b10d7d04c0e165b537b4c57f10bd5f
     app.openshift.io/vcs-uri: https://github.com/FlorianSchaechter/express-sample-app
   labels:
     app: florian-schaechter-tekton-express-sample-app
@@ -49,7 +49,7 @@ spec:
   template:
     metadata:
       annotations:
-        app.openshift.io/vcs-ref: 9ddd55bf12583a958154778b9ac09fbd37c04a1e
+        app.openshift.io/vcs-ref: 1ae29db5c2b10d7d04c0e165b537b4c57f10bd5f
         app.openshift.io/vcs-uri: https://github.com/FlorianSchaechter/express-sample-app
       labels:
         app: florian-schaechter-tekton-express-sample-app
@@ -63,7 +63,7 @@ spec:
         - name: PROTOCOLS
         - name: LOG_LEVEL
           value: debug
-        image: quay.io/florian_schaechter/express-sample-app:9ddd55bf12583a958154778b9ac09fbd37c04a1e
+        image: quay.io/florian_schaechter/express-sample-app:1ae29db5c2b10d7d04c0e165b537b4c57f10bd5f
         imagePullPolicy: IfNotPresent
         livenessProbe:
           failureThreshold: 3
@@ -101,7 +101,7 @@ apiVersion: route.openshift.io/v1
 kind: Route
 metadata:
   annotations:
-    app.openshift.io/vcs-ref: 9ddd55bf12583a958154778b9ac09fbd37c04a1e
+    app.openshift.io/vcs-ref: 1ae29db5c2b10d7d04c0e165b537b4c57f10bd5f
     app.openshift.io/vcs-uri: https://github.com/FlorianSchaechter/express-sample-app
     argocd.argoproj.io/sync-options: Validate=false
     openshift.io/host.generated: "true"
