@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   annotations:
-    app.openshift.io/vcs-ref: d62d6ac205fdddfdf3d4a3964e1585d13211b616
+    app.openshift.io/vcs-ref: 56e11ca31df3a3bb70229b04036e163b3fcc3f71
     app.openshift.io/vcs-uri: https://github.com/cloud-native-garage-method-cohort/nextjs-app-tkaatz.git
   labels:
     app: tkaatz-next
@@ -28,7 +28,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   annotations:
-    app.openshift.io/vcs-ref: d62d6ac205fdddfdf3d4a3964e1585d13211b616
+    app.openshift.io/vcs-ref: 56e11ca31df3a3bb70229b04036e163b3fcc3f71
     app.openshift.io/vcs-uri: https://github.com/cloud-native-garage-method-cohort/nextjs-app-tkaatz.git
   labels:
     app: tkaatz-next
@@ -49,7 +49,7 @@ spec:
   template:
     metadata:
       annotations:
-        app.openshift.io/vcs-ref: d62d6ac205fdddfdf3d4a3964e1585d13211b616
+        app.openshift.io/vcs-ref: 56e11ca31df3a3bb70229b04036e163b3fcc3f71
         app.openshift.io/vcs-uri: https://github.com/cloud-native-garage-method-cohort/nextjs-app-tkaatz.git
       labels:
         app: tkaatz-next
@@ -63,7 +63,7 @@ spec:
         - name: PROTOCOLS
         - name: LOG_LEVEL
           value: debug
-        image: quay.io/tkaatz/next-sample:d62d6ac205fdddfdf3d4a3964e1585d13211b616
+        image: quay.io/tkaatz/next-sample:56e11ca31df3a3bb70229b04036e163b3fcc3f71
         imagePullPolicy: IfNotPresent
         livenessProbe:
           failureThreshold: 3
@@ -101,7 +101,7 @@ apiVersion: route.openshift.io/v1
 kind: Route
 metadata:
   annotations:
-    app.openshift.io/vcs-ref: d62d6ac205fdddfdf3d4a3964e1585d13211b616
+    app.openshift.io/vcs-ref: 56e11ca31df3a3bb70229b04036e163b3fcc3f71
     app.openshift.io/vcs-uri: https://github.com/cloud-native-garage-method-cohort/nextjs-app-tkaatz.git
     argocd.argoproj.io/sync-options: Validate=false
     openshift.io/host.generated: "true"
