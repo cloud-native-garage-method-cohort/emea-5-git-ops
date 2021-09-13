@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   annotations:
-    app.openshift.io/vcs-ref: 64494f2110572a7b705914547208fd79c3205382
+    app.openshift.io/vcs-ref: ac5117a8ed5096b3aa71b006557eb38617113537
     app.openshift.io/vcs-uri: https://github.com/alexseymour1997/express-sample-app
   labels:
     app: alex-seymour-express-sample-app
@@ -28,7 +28,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   annotations:
-    app.openshift.io/vcs-ref: 64494f2110572a7b705914547208fd79c3205382
+    app.openshift.io/vcs-ref: ac5117a8ed5096b3aa71b006557eb38617113537
     app.openshift.io/vcs-uri: https://github.com/alexseymour1997/express-sample-app
   labels:
     app: alex-seymour-express-sample-app
@@ -49,7 +49,7 @@ spec:
   template:
     metadata:
       annotations:
-        app.openshift.io/vcs-ref: 64494f2110572a7b705914547208fd79c3205382
+        app.openshift.io/vcs-ref: ac5117a8ed5096b3aa71b006557eb38617113537
         app.openshift.io/vcs-uri: https://github.com/alexseymour1997/express-sample-app
       labels:
         app: alex-seymour-express-sample-app
@@ -63,7 +63,7 @@ spec:
         - name: PROTOCOLS
         - name: LOG_LEVEL
           value: debug
-        image: quay.io/alexander_seymour_ibm/express-sample-app:64494f2110572a7b705914547208fd79c3205382
+        image: quay.io/alexander_seymour_ibm/express-sample-app:ac5117a8ed5096b3aa71b006557eb38617113537
         imagePullPolicy: IfNotPresent
         livenessProbe:
           failureThreshold: 3
@@ -101,7 +101,7 @@ apiVersion: route.openshift.io/v1
 kind: Route
 metadata:
   annotations:
-    app.openshift.io/vcs-ref: 64494f2110572a7b705914547208fd79c3205382
+    app.openshift.io/vcs-ref: ac5117a8ed5096b3aa71b006557eb38617113537
     app.openshift.io/vcs-uri: https://github.com/alexseymour1997/express-sample-app
     argocd.argoproj.io/sync-options: Validate=false
     openshift.io/host.generated: "true"
