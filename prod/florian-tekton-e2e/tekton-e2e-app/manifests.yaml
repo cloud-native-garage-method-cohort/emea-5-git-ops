@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   annotations:
-    app.openshift.io/vcs-ref: d3ab6061ee58ad44e1b5c81763da3522c37c1964
+    app.openshift.io/vcs-ref: 1d70ea7a05bafe68429ddc17ec917b81b6ad0ccd
     app.openshift.io/vcs-uri: https://github.com/FlorianSchaechter/tekton-e2e
   labels:
     app: florian-tekton-e2e
@@ -28,7 +28,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   annotations:
-    app.openshift.io/vcs-ref: d3ab6061ee58ad44e1b5c81763da3522c37c1964
+    app.openshift.io/vcs-ref: 1d70ea7a05bafe68429ddc17ec917b81b6ad0ccd
     app.openshift.io/vcs-uri: https://github.com/FlorianSchaechter/tekton-e2e
   labels:
     app: florian-tekton-e2e
@@ -49,7 +49,7 @@ spec:
   template:
     metadata:
       annotations:
-        app.openshift.io/vcs-ref: d3ab6061ee58ad44e1b5c81763da3522c37c1964
+        app.openshift.io/vcs-ref: 1d70ea7a05bafe68429ddc17ec917b81b6ad0ccd
         app.openshift.io/vcs-uri: https://github.com/FlorianSchaechter/tekton-e2e
       labels:
         app: florian-tekton-e2e
@@ -63,7 +63,7 @@ spec:
         - name: PROTOCOLS
         - name: LOG_LEVEL
           value: debug
-        image: quay.io/florian_schaechter/tekto-e2e:d3ab6061ee58ad44e1b5c81763da3522c37c1964
+        image: quay.io/florian_schaechter/tekto-e2e:1d70ea7a05bafe68429ddc17ec917b81b6ad0ccd
         imagePullPolicy: IfNotPresent
         livenessProbe:
           failureThreshold: 3
@@ -101,7 +101,7 @@ apiVersion: route.openshift.io/v1
 kind: Route
 metadata:
   annotations:
-    app.openshift.io/vcs-ref: d3ab6061ee58ad44e1b5c81763da3522c37c1964
+    app.openshift.io/vcs-ref: 1d70ea7a05bafe68429ddc17ec917b81b6ad0ccd
     app.openshift.io/vcs-uri: https://github.com/FlorianSchaechter/tekton-e2e
     argocd.argoproj.io/sync-options: Validate=false
     openshift.io/host.generated: "true"
