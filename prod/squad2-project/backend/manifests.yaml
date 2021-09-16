@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   annotations:
-    app.openshift.io/vcs-ref: ccf847a7313b17eb17e4a6d3ad9eca0a2123430c
+    app.openshift.io/vcs-ref: 940b837ce6fa5619eb03a8ca6d9fca0906c4fb1d
     app.openshift.io/vcs-uri: https://github.com/cloud-native-garage-method-cohort/emea-5-project-squad2-be.git
   labels:
     app: backend
@@ -28,7 +28,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   annotations:
-    app.openshift.io/vcs-ref: ccf847a7313b17eb17e4a6d3ad9eca0a2123430c
+    app.openshift.io/vcs-ref: 940b837ce6fa5619eb03a8ca6d9fca0906c4fb1d
     app.openshift.io/vcs-uri: https://github.com/cloud-native-garage-method-cohort/emea-5-project-squad2-be.git
   labels:
     app: backend
@@ -49,7 +49,7 @@ spec:
   template:
     metadata:
       annotations:
-        app.openshift.io/vcs-ref: ccf847a7313b17eb17e4a6d3ad9eca0a2123430c
+        app.openshift.io/vcs-ref: 940b837ce6fa5619eb03a8ca6d9fca0906c4fb1d
         app.openshift.io/vcs-uri: https://github.com/cloud-native-garage-method-cohort/emea-5-project-squad2-be.git
       labels:
         app: backend
@@ -63,7 +63,7 @@ spec:
         - name: PROTOCOLS
         - name: LOG_LEVEL
           value: debug
-        image: quay.io/tkaatz/squad2-be:ccf847a7313b17eb17e4a6d3ad9eca0a2123430c
+        image: quay.io/tkaatz/squad2-be:940b837ce6fa5619eb03a8ca6d9fca0906c4fb1d
         imagePullPolicy: IfNotPresent
         livenessProbe:
           failureThreshold: 3
@@ -101,7 +101,7 @@ apiVersion: route.openshift.io/v1
 kind: Route
 metadata:
   annotations:
-    app.openshift.io/vcs-ref: ccf847a7313b17eb17e4a6d3ad9eca0a2123430c
+    app.openshift.io/vcs-ref: 940b837ce6fa5619eb03a8ca6d9fca0906c4fb1d
     app.openshift.io/vcs-uri: https://github.com/cloud-native-garage-method-cohort/emea-5-project-squad2-be.git
     argocd.argoproj.io/sync-options: Validate=false
     openshift.io/host.generated: "true"
