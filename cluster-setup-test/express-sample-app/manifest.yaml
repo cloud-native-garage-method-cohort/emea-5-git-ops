@@ -5,9 +5,9 @@ metadata:
     app.openshift.io/vcs-ref: 98eb19f697a7506ce577e71a949b4c9c5e296544
     app.openshift.io/vcs-uri: https://github.com/upslopeio/express-sample-app
   labels:
-    app: cluster-setup-test
-    app.kubernetes.io/instance: cluster-setup-test
-    app.kubernetes.io/name: cluster-setup-test-express-sample-app
+    app: express-sample-app
+    app.kubernetes.io/instance: express-sample-app-07e25920-8254-4fa1-aef4-91b6b2e4a0b5
+    app.kubernetes.io/name: express-sample-app
     app.openshift.io/runtime: js
   name: express-sample-app
 spec:
@@ -17,9 +17,9 @@ spec:
     protocol: TCP
     targetPort: 3000
   selector:
-    app: cluster-setup-test
-    app.kubernetes.io/instance: cluster-setup-test
-    app.kubernetes.io/name: cluster-setup-test-express-sample-app
+    app: express-sample-app
+    app.kubernetes.io/instance: express-sample-app-07e25920-8254-4fa1-aef4-91b6b2e4a0b5
+    app.kubernetes.io/name: express-sample-app
     app.openshift.io/runtime: js
   sessionAffinity: None
   type: ClusterIP
@@ -31,9 +31,9 @@ metadata:
     app.openshift.io/vcs-ref: 98eb19f697a7506ce577e71a949b4c9c5e296544
     app.openshift.io/vcs-uri: https://github.com/upslopeio/express-sample-app
   labels:
-    app: cluster-setup-test
-    app.kubernetes.io/instance: cluster-setup-test
-    app.kubernetes.io/name: cluster-setup-test-express-sample-app
+    app: express-sample-app
+    app.kubernetes.io/instance: express-sample-app-07e25920-8254-4fa1-aef4-91b6b2e4a0b5
+    app.kubernetes.io/name: express-sample-app
     app.openshift.io/runtime: js
   name: express-sample-app
 spec:
@@ -42,9 +42,9 @@ spec:
   revisionHistoryLimit: 10
   selector:
     matchLabels:
-      app: cluster-setup-test
-      app.kubernetes.io/instance: cluster-setup-test
-      app.kubernetes.io/name: cluster-setup-test-express-sample-app
+      app: express-sample-app
+      app.kubernetes.io/instance: express-sample-app-07e25920-8254-4fa1-aef4-91b6b2e4a0b5
+      app.kubernetes.io/name: express-sample-app
       app.openshift.io/runtime: js
   template:
     metadata:
@@ -52,9 +52,9 @@ spec:
         app.openshift.io/vcs-ref: 98eb19f697a7506ce577e71a949b4c9c5e296544
         app.openshift.io/vcs-uri: https://github.com/upslopeio/express-sample-app
       labels:
-        app: cluster-setup-test
-        app.kubernetes.io/instance: cluster-setup-test
-        app.kubernetes.io/name: cluster-setup-test-express-sample-app
+        app: express-sample-app
+        app.kubernetes.io/instance: express-sample-app-07e25920-8254-4fa1-aef4-91b6b2e4a0b5
+        app.kubernetes.io/name: express-sample-app
         app.openshift.io/runtime: js
     spec:
       containers:
@@ -106,9 +106,9 @@ metadata:
     argocd.argoproj.io/sync-options: Validate=false
     openshift.io/host.generated: "true"
   labels:
-    app: cluster-setup-test
-    app.kubernetes.io/instance: cluster-setup-test
-    app.kubernetes.io/name: cluster-setup-test-express-sample-app
+    app: express-sample-app
+    app.kubernetes.io/instance: express-sample-app-07e25920-8254-4fa1-aef4-91b6b2e4a0b5
+    app.kubernetes.io/name: express-sample-app
     app.openshift.io/runtime: js
   name: express-sample-app
 spec:
